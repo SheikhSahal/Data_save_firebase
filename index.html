@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 500px;">
+        
+        <div class="form-group">
+            <label for="Username">User name</label>
+            <input type="text" class="form-control" id="Username" placeholder="User Name">
+        </div>
+        <div class="form-group">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="c_password">Confirm Password</label>
+            <input type="password" class="form-control" id="c_password" placeholder="Confirm Password">
+        </div>
+
+        <button onclick="signup()" class="btn btn-primary">Submit</button>
+     
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBcOGfKlPwXRGyiGV1UuuQUVXUswNWiIKE",
+    authDomain: "username-and-password-2bbed.firebaseapp.com",
+    databaseURL: "https://username-and-password-2bbed.firebaseio.com",
+    projectId: "username-and-password-2bbed",
+    storageBucket: "username-and-password-2bbed.appspot.com",
+    messagingSenderId: "288758209039",
+    appId: "1:288758209039:web:a37fb3687b700d9573617a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+</body>
+</html>
